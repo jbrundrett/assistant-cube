@@ -21,11 +21,19 @@ h2 {
     margin-top: 0;
 }
 
-p.learn {
+p.nav {
+    text-align: center;
+    font-size: 1.8em;
+    margin: auto;
+    line-height: 60px;    
+}
+
+p {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     text-align: center;
     color: white;
+    line-height: normal;
 }
 
 .learn a {
@@ -43,30 +51,33 @@ p.learn {
     -moz-transform: scale(0.75,0.75);
     perspective: 800px;
     perspective-origin: 50% 200px;
-    transform: scale(0.75,0.75);
+    transform: scale(0.9,0.9);
 }
 
 .cube {
     position: relative;
-    margin: 0 auto 100px;
-    height: 400px;
+    margin: 80px auto 80px;
+    height: 450px;
     width: 400px;
-    -webkit-transition: -webkit-transform 50ms linear;
+    -webkit-transition: -webkit-transform 100ms linear;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateX(-10deg) rotateY(20deg);
-    -moz-transition: -moz-transform 50ms linear;
+    -moz-transition: -moz-transform 100ms linear;
     -moz-transform-style: preserve-3d;
     -moz-transform: rotateX(-10deg) rotateY(20deg);
-    transition: transform 50ms linear;
+    transition: transform 100ms linear;
     transform-style: preserve-3d;
     transform: rotateX(-10deg) rotateY(20deg);
 }
 
 .cube h2 {
+    line-height: normal;
     color: #fff;
     padding-top: 0;
     margin-top: 0;
 }
+
+
 
 .cube a {
     color: #fff;
@@ -101,7 +112,14 @@ p.learn {
     -webkit-transform: rotateY(90deg) translateZ(200px);
     -moz-transform: rotateY(90deg) translateZ(200px);
     transform: rotateY(90deg) translateZ(200px);
+
+}
+
+.cube > div:nth-child(3) p {
     text-align: center;
+    font-size: 1.8em;
+    margin: auto;
+    line-height: 60px;
 }
 
 .cube > div:nth-child(4) {
@@ -118,8 +136,8 @@ p.learn {
 
 .cube > div:nth-child(5) p {
     text-align: center;
-    font-size: 2.77em;
-    margin: 40px;
+    font-size: 1.8em;
+    margin: auto;
     line-height: 60px;
 }
 

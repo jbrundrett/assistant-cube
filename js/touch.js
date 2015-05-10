@@ -36,7 +36,7 @@ $(function(){
         };
 
     viewport.duration = function() {
-        var d = touch ? 50 : 500;
+        var d = touch ? 100 : 500;
         viewport.el.style[transitionDurationProp] = d + "ms";
         return d;
     }();
